@@ -1,0 +1,19 @@
+{
+  "name": "greedy-florist",
+  "version": "1.0.0",
+  "description": "This file was created automatically by pboyle17's github command line repo initialization script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pboyle17/greedyFlorist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pboyle17/greedyFlorist/issues"
+  },
+  "homepage": "https://github.com/pboyle17/greedyFlorist#readme"
+}
