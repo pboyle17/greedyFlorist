@@ -8,21 +8,20 @@ var GreedyFlorist = function GreedyFlorist(input){
     var flowers = lines[0].split(' ')[0];
     var people = lines[0].split(' ')[1];
     var prices = lines[1].split(' ').map(Number).sort().reverse();
-    var multiplier = 1;
-    var count = 0;
+      var multiplier = 1;
+    var count = 1;
 
-    if(people>=flowers){
+    if(people===flowers){
       prices.forEach(function(price){
         sum+=price;
       });
     } else {
       for(var x = 0; x < prices.length ; x++){
-        count++;
-        if(count>people){
-          count=0;
+        sum+=prices[x]*multiplier;
+        if(count%people===0){
           multiplier++;
         }
-        sum+=prices[x]*multiplier;
+        count++;
       }
     }
     return sum;
